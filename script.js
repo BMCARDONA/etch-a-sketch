@@ -71,3 +71,18 @@ rainbowBtn.addEventListener("click", function (e) {
   });
 });  
 
+
+
+// eraser button
+function changeColorWhite (target) {
+  target.style.backgroundColor = 'white';
+}
+const eraseBtn = document.querySelector('.eraseBtn');
+eraseBtn.addEventListener("click", function (e) {
+  container.addEventListener("mouseover", function (e) {
+      let target = e.target;
+      if (target.matches('.cell')) {
+          changeColorWhite(target);
+      }
+  });
+});  git 
