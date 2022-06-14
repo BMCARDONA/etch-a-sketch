@@ -10,6 +10,10 @@ function makeCell (num) {
     }
 }
 
+function makeGrid(numRows, numCols) {
+  container.style.setProperty('numRows', numRows); 
+  container.style.setProperty('numCols', numCols); 
+}
 
 function gridSize() {
   let number = prompt("How many squares per side? (Maximum: 69)", 10); 
