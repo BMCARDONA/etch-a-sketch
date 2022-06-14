@@ -39,4 +39,15 @@ h1 {
   border: black solid 4px;
 }
 
+#outerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: black solid 4px;
+  height: 600px;
+  width: 600px;
+  background-color: rgba(76, 76, 76, 0); 
+}
+
 
