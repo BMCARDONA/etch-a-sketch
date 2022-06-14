@@ -5,6 +5,25 @@ body {
 }
 
 
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  padding-top: 15px;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+}
+
 #container {
   display: grid;
   justify-content: center;
