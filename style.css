@@ -50,4 +50,11 @@ h1 {
   background-color: rgba(76, 76, 76, 0); 
 }
 
+.cell {
+  display:flex;
+  padding: 1px;
+  border: 0.01px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
 
