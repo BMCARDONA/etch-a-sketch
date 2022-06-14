@@ -26,8 +26,29 @@ function gridSize() {
 
 gridSize();
 
+// black button
+function changeColorBlack (target) {
+  target.style.backgroundColor = 'black';
+}
+container.addEventListener("mouseover", function (e) {
+  let target = e.target;
+  if (target.matches('.cell')) {
+      changeColorBlack(target);
+  }
+});
+const blackBtn = document.querySelector('.blackBtn');
+blackBtn.addEventListener("click", function (e) {
+  container.addEventListener("mouseover", function (e) {
+      let target = e.target;
+      if (target.matches('.cell')) {
+          changeColorBlack(target);
+      }
+  });
+}); 
+
 // reset button
 const reset = document.querySelector('.resetBtn');
 reset.addEventListener('click', function() {
      window.location.reload();
 });
+
