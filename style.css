@@ -57,4 +57,10 @@ h1 {
   background-color: rgb(255, 255, 255);
 }
 
+#button-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
 
