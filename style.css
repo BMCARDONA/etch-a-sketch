@@ -1,0 +1,15 @@
+#container {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  /* repeat(number of columns, the column width we want) */
+  /* See: https://css-tricks.com/introduction-fr-css-unit/ */
+  /* Also see: https://www.youtube.com/watch?v=N731aTpo8TI&ab_channel=RachelAndrew */
+  grid-template-columns: repeat(var(numberOfCols), 1fr);
+  /* repeat(number of rows, the column width we want) */
+  grid-template-rows: repeat(var(numberOfRows), 1fr);
+  width: 550px;
+  height: 550px;
+  border: black solid 4px;
+}
+
