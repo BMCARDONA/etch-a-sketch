@@ -52,3 +52,22 @@ reset.addEventListener('click', function() {
      window.location.reload();
 });
 
+
+// rainbow button
+function changeColorRandom (target) {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  target.style.backgroundColor = bgColor;
+}
+const rainbowBtn = document.querySelector('.rainbowBtn');
+rainbowBtn.addEventListener("click", function (e) {
+  container.addEventListener("mouseover", function (e) {
+      let target = e.target;
+      if (target.matches('.cell')) {
+          changeColorRandom(target);
+      }
+  });
+});  
+
