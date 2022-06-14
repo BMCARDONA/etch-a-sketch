@@ -25,3 +25,9 @@ function gridSize() {
 }
 
 gridSize();
+
+// reset button
+const reset = document.querySelector('.resetBtn');
+reset.addEventListener('click', function() {
+     window.location.reload();
+});
