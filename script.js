@@ -11,8 +11,8 @@ function makeCell (num) {
 }
 
 function makeGrid(numRows, numCols) {
-  container.style.setProperty('numberOfRows', numRows); 
-  container.style.setProperty('numberOfCols', numCols); 
+    container.style.setProperty('--numRows', numRows); 
+    container.style.setProperty('--numCols', numCols); 
 }
 
 function gridSize() {
