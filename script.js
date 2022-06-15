@@ -15,11 +15,13 @@ function makeGrid(numRows, numCols) {
     container.style.setProperty('--numCols', numCols); 
 }
 
+let gridLength = 0;
 function gridSize() {
   let number = prompt("How many squares per side? (Maximum: 69)", 10); 
    while (number > 69) {
        number = prompt("Please enter a number less than or equal to 69!");
    }
+   gridLength += number;
    makeCell(number);
    makeGrid(number, number);
 }
@@ -86,3 +88,18 @@ eraseBtn.addEventListener("click", function (e) {
       }
   });
 });  git 
+
+
+// clear button
+
+function clearGrid() {
+  let cell = document.getElementsByClassName('cell')
+  for (let i = 0; i < gridLength * gridLength; i++) {
+      cell[i].style.backgroundColor = "white";
+  }
+} 
+
+const clearBtn = document.querySelector('.clearBtn');
+clearBtn.addEventListener('click', function() {
+  clearGrid();
+});
