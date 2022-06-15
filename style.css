@@ -66,6 +66,7 @@ h1 {
 .blackBtn,
 .rainbowBtn,
 .eraseBtn,
+.clearBtn,
 .resetBtn {
     background-color: rgb(53, 53, 53);
     font-family: 'Lato', sans-serif;
@@ -89,6 +90,10 @@ h1 {
     width: 100px;
 }
 
+.clearBtn {
+  width: 100px;
+}
+
 .resetBtn {
     width: 100px;
 }
@@ -96,6 +101,7 @@ h1 {
 .blackBtn:hover,
 .rainbowBtn:hover,
 .eraseBtn:hover,
+.clearBtn:hover,
 .resetBtn:hover {
     background-color: #0fa;
     box-shadow: 0 0 10px #fff;
