@@ -68,14 +68,16 @@ h1 {
 .eraseBtn,
 .clearBtn,
 .resetBtn {
-    background-color: rgb(53, 53, 53);
-    font-family: 'Lato', sans-serif;
-    height: 40px;
-    width: 100px;
-    font-size: 25px;
-    border-radius: 10px;
-    border: 0px;
-    margin: 10px;
+  color: grey;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Lato', sans-serif;
+  height: 46px;
+  width: 100px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+  padding: 4px;
 }
 
 .blackBtn {
@@ -109,4 +111,14 @@ h1 {
   }
   
 
-
+ .slider {
+  color: grey;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Lato', sans-serif;
+  height: 40px;
+  padding: 4px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 10px;
+ }

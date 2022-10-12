@@ -79,3 +79,34 @@
         }
     });
 });  
+
+
+
+// eraser button
+function changeColorWhite (target) {
+  target.style.backgroundColor = 'white';
+}
+const eraseBtn = document.querySelector('.eraseBtn');
+eraseBtn.addEventListener("click", function (e) {
+  container.addEventListener("mouseover", function (e) {
+      let target = e.target;
+      if (target.matches('.cell')) {
+          changeColorWhite(target);
+      }
+  });
+});  
+
+
+// clear button
+
+function clearGrid() {
+  let cell = document.getElementsByClassName('cell')
+  for (let i = 0; i < number * number; i++) {
+      cell[i].style.backgroundColor = "white";
+  }
+} 
+
+const clearBtn = document.querySelector('.clearBtn');
+clearBtn.addEventListener('click', function() {
+  clearGrid();
+});
